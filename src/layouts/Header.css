@@ -31,16 +31,16 @@ margin-left: 2%;
 .theMaintitle{
     font-style: italic;
     font-weight: 300;
-    color: rgb(55, 60, 60);
+    color: rgb(114, 249, 99);
 }
 
 .btn{
   padding: 1%;
     width: 10%;
-    background-color: rgb(3, 55, 14) ;
-    border-radius: 10px;
-    color: rgb(236, 240, 242);
-    border: 3px solid rgb(48, 244, 107);
+    background-color: rgb(14, 249, 65) ;
+    border-radius: 0px;
+    color: rgb(8, 12, 15);
+    border: none;
 }
 .titleBtn{
     justify-content: space-around;
@@ -60,6 +60,8 @@ margin-left: 2%;
 ul{
     list-style: none;
 }
-a{color: rgb(51, 48, 48);
+a{color: rgb(115, 226, 93);
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
 }

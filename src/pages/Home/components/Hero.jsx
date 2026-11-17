@@ -5,7 +5,8 @@ import { useEffect, useState } from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
 import Details from './details' 
 import { motion } from 'motion/react'
-import { animate, scroll,stagger } from "motion"
+import { animate, scroll,stagger } from "motion";
+import { FaCoins } from "react-icons/fa";
 function Hero() {
 const [item,setItem] = useState([])
 const [searchinput,setSearchinput] = useState("")
@@ -104,14 +105,15 @@ const filteredCoins = thesearchf.sort((prod , secndpro )=> {
 
                         {/* </div> */}
                         
-                        <div style={{display:'flex',justifyContent:'center',alignItems:'center',width:'40%',justifyContent:'space-around'}}>
+                        <div style={{display:'flex',justifyContent:'center',alignItems:'center',width:'30%',justifyContent:'space-around'}}>
+                          <FaCoins style={{color:'yellow'}}/>
                         <h3 style={{color:'white',fontStyle:'italic'}}>the name : {person.name}</h3>
                         <p style={{color:'lightgreen'}}>Symbol : {person.symbol}</p> 
 
                         </div>
                       
 
-<div style={{width:'50%',display:'flex',flexDirection:'row'}}>
+<div style={{width:'65%',display:'flex',flexDirection:'row',justifyContent:'space-between'}}>
        <p style={{color:'lightgreen'}}>value : {person.beta_value}</p>
                         <p style={{color:'lightgreen'}}>Rank : {person.rank}</p>
                         <p style={{color:'white'}}>the price : {parseInt(person.quotes.USD.price)}</p>

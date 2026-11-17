@@ -1,10 +1,12 @@
 import './Header.css';
 import { Link } from 'react-router-dom';
+import { BsCurrencyBitcoin } from "react-icons/bs";
 function Header() {
 return(
     <header className='header'>
         <div className='titleBtn'>
-<h1 className='theMaintitle'>Perspip</h1><ul className='ulreact'>
+<h1 className='theMaintitle'><BsCurrencyBitcoin />
+Perspip</h1><ul className='ulreact'>
      <Link to="/">Home</Link>
   <Link to="/about">About</Link>
 
