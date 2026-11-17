@@ -68,15 +68,17 @@
 /* the API part */
 .thecardsusers{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     width: 100%;
     justify-content: space-around;
     justify-items: center;
 }
 .thecarditself{
     border: 3px solid rgb(56, 250, 42);
-    width: 70%;
+    width: 90%;
     margin-bottom: 5vh;
+    display: flex;
+    align-items: center;
     background-color: rgb(24, 26, 23);
     border-radius: 10px;
     box-shadow: 10xp 10px 5px yellowgreen;

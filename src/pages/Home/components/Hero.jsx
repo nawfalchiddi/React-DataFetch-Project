@@ -48,6 +48,7 @@ const filteredCoins = thesearchf.sort((prod , secndpro )=> {
     if (select === 'all') {
       return 0; 
     } else if(select==="heighest") {
+
       return secndpro.quotes.USD.price - prod.quotes.USD.price
     //   return parseFloat(prod.price) > Number(select); 
     }else if(select==="lowest") {
@@ -98,23 +99,27 @@ const filteredCoins = thesearchf.sort((prod , secndpro )=> {
 //   whileDrag={{ scale: 1.2 }}
                      onClick={()=>navigateto(`/details/${person.id}`)} key={person.id} className='thecarditself'>
 {/* <Details thedata={item}/> */}
-                        <div style={{width:'100%',display:'flex',justifyContent:'center'}}>
-                    <img style={{width:'50%'}} src="https://static.vecteezy.com/system/resources/thumbnails/053/964/117/small/a-silhouette-of-a-person-with-a-circular-head-and-a-minimalistic-body-structure-showcasing-a-simple-design-png.png" alt="" />
+                        {/* <div style={{width:'20%',display:'flex',justifyContent:'center'}}> */}
+                    {/* <img style={{width:'20%'}} src="https://static.vecteezy.com/system/resources/thumbnails/053/964/117/small/a-silhouette-of-a-person-with-a-circular-head-and-a-minimalistic-body-structure-showcasing-a-simple-design-png.png" alt="" /> */}
 
-                        </div>
-                        <div style={{display:'flex',justifyContent:'center',alignItems:'center',width:'100%',justifyContent:'space-around'}}>
+                        {/* </div> */}
+                        
+                        <div style={{display:'flex',justifyContent:'center',alignItems:'center',width:'40%',justifyContent:'space-around'}}>
                         <h3 style={{color:'white',fontStyle:'italic'}}>the name : {person.name}</h3>
                         <p style={{color:'lightgreen'}}>Symbol : {person.symbol}</p> 
 
                         </div>
                       
 
-                        <p style={{color:'lightgreen'}}>value : {person.beta_value}</p>
+<div style={{width:'50%',display:'flex',flexDirection:'row'}}>
+       <p style={{color:'lightgreen'}}>value : {person.beta_value}</p>
                         <p style={{color:'lightgreen'}}>Rank : {person.rank}</p>
                         <p style={{color:'white'}}>the price : {parseInt(person.quotes.USD.price)}</p>
                         <p style={{color:'white'}}> total supplies : {person.total_supply}</p>
             <p>the volume in 24h {parseInt(person.quotes.USD.percent_change_24h)}</p>
 
+</div>
+                   
                         
                     </motion.div>
                 ))
