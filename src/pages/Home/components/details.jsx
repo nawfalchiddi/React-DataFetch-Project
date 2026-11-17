@@ -28,6 +28,7 @@ function Details(props){
     }
     return(
         <div>
+            <img src="https://e7.pngegg.com/pngimages/145/494/png-clipart-gold-colored-bitcoin-coin-bitcoin-cryptocurrency-monero-initial-coin-offering-bitcoin-medal-gold-thumbnail.png" alt="" />
             <p>the name of the bitcoin is :{theitem.name}</p>
             <p>and its main symbol is {theitem.symbol}</p>
             <p>the rank it reached is abviously {theitem.rank}</p>

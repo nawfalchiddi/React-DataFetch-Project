@@ -77,14 +77,14 @@ const filteredCoins = thesearchf.sort((prod , secndpro )=> {
             </div>  
             <div className='searchBox'>
            <div className='searchiconbox'> <FaSearchDollar className='thesearchicon'/> <motion.input className='searchinpt' whileTap={{ scale: 1.5 }}  placeholder='searcha product....' type="search" value={searchinput} onChange={event=>setSearchinput(event.target.value)}/></div>   
-            <div className='selecticonbox'> <motion.select  drag
+            <div className='selecticonbox'> <TbAdjustmentsSearch className='theselecticon'/><motion.select  drag
                    dragSnapToOrigin
                    whileTap={{ scale: 1 }}
   whileDrag={{ scale: 1.2 }}
   whileHover={{ scale: 1.05 }}
                  className='theselectinpt' value={select}
                 onChange={event=>setSelect(event.target.value)} name="" id="">
-                    <option value="all"><TbAdjustmentsSearch/> All the prices</option>
+                    <option value="all"> All the prices</option>
                     <option value="heighest">the heiest prices</option>
                     <option value="lowest">lowest prices</option>
                     <option value="heighestCap">heighest cap</option>
@@ -120,7 +120,7 @@ const filteredCoins = thesearchf.sort((prod , secndpro )=> {
                         <p style={{color:'lightgreen'}}>Rank : {person.rank}</p>
                         <p style={{color:'white'}}>the price : {parseInt(person.quotes.USD.price)}</p>
                         <p style={{color:'white'}}> total supplies : {person.total_supply}</p>
-            <p>the volume in 24h {parseInt(person.quotes.USD.percent_change_24h)}</p>
+            <p>the volume in 24h : {parseInt(person.quotes.USD.percent_change_24h)}</p>
 
 </div>
                    
