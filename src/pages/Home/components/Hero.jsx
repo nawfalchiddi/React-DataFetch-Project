@@ -7,6 +7,8 @@ import Details from './details'
 import { motion } from 'motion/react'
 import { animate, scroll,stagger } from "motion";
 import { FaCoins } from "react-icons/fa";
+import { TbAdjustmentsSearch } from "react-icons/tb";
+import { FaSearchDollar } from "react-icons/fa";
 function Hero() {
 const [item,setItem] = useState([])
 const [searchinput,setSearchinput] = useState("")
@@ -74,19 +76,19 @@ const filteredCoins = thesearchf.sort((prod , secndpro )=> {
             
             </div>  
             <div className='searchBox'>
-                <motion.input className='searchinpt' whileTap={{ scale: 1.5 }}  placeholder='searcha product....' type="search" value={searchinput} onChange={event=>setSearchinput(event.target.value)}/>
-                <motion.select  drag
+           <div className='searchiconbox'> <FaSearchDollar className='thesearchicon'/> <motion.input className='searchinpt' whileTap={{ scale: 1.5 }}  placeholder='searcha product....' type="search" value={searchinput} onChange={event=>setSearchinput(event.target.value)}/></div>   
+            <div className='selecticonbox'> <motion.select  drag
                    dragSnapToOrigin
                    whileTap={{ scale: 1 }}
   whileDrag={{ scale: 1.2 }}
   whileHover={{ scale: 1.05 }}
                  className='theselectinpt' value={select}
                 onChange={event=>setSelect(event.target.value)} name="" id="">
-                    <option value="all">All the prices</option>
+                    <option value="all"><TbAdjustmentsSearch/> All the prices</option>
                     <option value="heighest">the heiest prices</option>
                     <option value="lowest">lowest prices</option>
                     <option value="heighestCap">heighest cap</option>
-                </motion.select>
+                </motion.select></div>   
             </div>
 
         <div className='thecardsusers' >

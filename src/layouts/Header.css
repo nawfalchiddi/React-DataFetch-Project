@@ -5,6 +5,7 @@
     flex-direction: column;
    justify-content: center;
    background-color: rgb(13, 14, 14);
+   box-shadow: 0.5px 7px 10px rgb(18, 143, 18);
 }
 .nav{
     width: 100%;
