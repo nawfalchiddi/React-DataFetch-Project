@@ -155,3 +155,11 @@ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
       left: 4%;
     color: rgb(120, 185, 24);
 }
+.bTn{
+  padding: 1%;
+    width: 10%;
+    background-color: rgb(14, 249, 65) ;
+    border-radius: 0px;
+    color: rgb(8, 12, 15);
+    border: none;
+}
