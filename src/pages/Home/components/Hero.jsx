@@ -67,6 +67,8 @@ const filteredCoins = thesearchf.sort((prod , secndpro )=> {
 //   { y: 0, opacity: 1 },
 //   { delay: stagger(0.1) }
 // )
+
+const displayCoins = filteredCoins.slice(0, 20);
     return(
         
         <section className='heroSection'>
@@ -93,8 +95,8 @@ const filteredCoins = thesearchf.sort((prod , secndpro )=> {
 
         <div className='thecardsusers' >
            {
-            filteredCoins.length > 0 ?  
-                filteredCoins.map((person)=>(
+            displayCoins.length > 0 ?  
+                displayCoins.map((person)=>(
                     <motion.div  drag
   dragSnapToOrigin
   whileHover={{ scale: 1.05 }}
