@@ -1,0 +1,10 @@
+.fter{
+    color: rgb(100, 85, 63);
+    background-color: rgb(164, 190, 155);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10%;
+   
+}
